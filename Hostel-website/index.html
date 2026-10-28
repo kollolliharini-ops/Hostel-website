@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Website</title>
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Stay Hostel</title>
+
+<!-- CSS Code Inside HTML -->
+<style>
+    * {
+
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f8fb;
+        color: #263238;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #087e8b;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    nav {
+        background-color: #034f59;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #ffd166;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+        background: linear-gradient(135deg, #d9f3f0, #e4edff);
+    }
+
+    .hero h2 {
+        font-size: 32px;
+        color: #034f59;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: #087e8b;
+        color: white;
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 6px;
+        margin-top: 15px;
+    }
+
+    .btn:hover {
+        background-color: #034f59;
+    }
+
+    section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .room-container {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    .room {
+        background-color: white;
+        width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 3px 12px #00000015;
+        padding-bottom: 15px;
+    }
+
+    .room img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    .room h3 {
+        color: #087e8b;
+    }
+
+    .price {
+        color: #087e8b;
+        font-weight: bold;
+    }
+
+    .facilities {
+        background-color: #e5f4f3;
+    }
+
+    .facilities ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .facilities li {
+        margin: 10px;
+    }
+
+    form {
+        max-width: 450px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    input,
+    textarea,
+    button {
+        padding: 12px;
+        font: inherit;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        min-height: 100px;
+    }
+
+    button {
+        background-color: #087e8b;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #034f59;
+    }
+
+    footer {
+        background-color: #034f59;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Mobile Responsive Design */
+    @media (max-width: 600px) {
+        nav a {
+            display: inline-block;
+            margin: 6px 8px;
+        }
+
+        .hero {
+            padding: 50px 15px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+        }
+
+        .room {
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Happy Stay Hostel</h1>
+        <p>Your Comfort, Our Priority!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Happy Stay Hostel</h2>
+        <p>Safe, comfortable and affordable accommodation for students.</p>
+        <a href="#rooms" class="btn">Explore Rooms</a>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+
+        <div class="room-container">
+
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800" alt="Single sharing room">
+                <h3>Single Sharing</h3>
+                <p>Private room with comfortable furniture.</p>
+                <p class="price">₹8,000/month</p>
+            </div>
+
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800" alt="Two sharing room">
+                <h3>Two Sharing</h3>
+                <p>Comfortable room shared by two students.</p>
+                <p class="price">₹6,000/month</p>
+            </div>
+
+            <div class="room">
+                <img src="https://images.unsplash.com/photo-1631049421450-348c6b0c0d6b?w=800" alt="Three sharing room">
+                <h3>Three Sharing</h3>
+                <p>Affordable accommodation for three students.</p>
+                <p class="price">₹4,500/month</p>
+            </div>
+
+        </div>
+        <p><small>Note: Prices shown are examples. Replace them with actual rates.</small></p>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <h2>Our Facilities</h2>
+
+        <ul>
+            <li>✓ Free Wi-Fi</li>
+            <li>✓ 24/7 Security</li>
+            <li>✓ Clean Drinking Water</li>
+            <li>✓ Laundry Facilities</li>
+            <li>✓ Study Area</li>
+            <li>✓ Food and Dining</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p>Address: Your Hostel Address, Your City</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Email: happystay@example.com</p>
+
+        <form action="mailto:happystay@example.com" method="post" enctype="text/plain">
+
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+
+            <textarea name="message" placeholder="Enter Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Happy Stay Hostel. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
